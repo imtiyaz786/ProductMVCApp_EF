@@ -1,0 +1,53 @@
+﻿@model IEnumerable<shoppingAppMVC5._0_EF.Models.EF.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PIsInStock)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PIsInStock)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

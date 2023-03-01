@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = shoppingAppMVC5._0_EF
+build_property.ProjectDir = C:\Users\2085836\OneDrive - Cognizant\Desktop\17102022-ASP.NET\day2\shoppingAppMVC5.0-EF\
